@@ -12,6 +12,7 @@ public abstract class ItemBase : MonoBehaviour
     {
         if (_audio)
         {
+            Activate();
             AudioSource.PlayClipAtPoint(_audio, Camera.main.transform.position);
         }
     }
